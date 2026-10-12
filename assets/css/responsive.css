@@ -1,0 +1,147 @@
+/* DriveRent - Responsive Media Queries */
+
+/* Laptop screens & height-constrained displays (e.g. 1366x768) */
+@media (max-height: 850px) and (min-width: 992px) {
+    .hero-section {
+        padding-top: 84px !important;
+        padding-bottom: 24px !important;
+        min-height: calc(100vh - 10px);
+    }
+    .hero-title {
+        font-size: 2.7rem !important;
+        margin-bottom: 0.55rem !important;
+    }
+    .hero-subtitle {
+        font-size: 1.02rem !important;
+        line-height: 1.58 !important;
+        margin-bottom: 0.85rem !important;
+    }
+    .hero-car-img {
+        max-height: 300px !important;
+    }
+    .hero-image-wrapper {
+        padding: 16px 20px !important;
+        border-radius: 22px !important;
+    }
+    .search-widget-card {
+        margin-top: 20px !important;
+        padding: 18px 26px !important;
+        border-radius: 20px !important;
+    }
+    .search-form .form-select,
+    .search-form .form-control,
+    .search-form button[type="submit"],
+    .search-form .btn-search-submit {
+        height: 48px !important;
+        font-size: 0.92rem !important;
+    }
+    .search-form .form-label {
+        font-size: 0.78rem !important;
+        margin-bottom: 5px !important;
+    }
+}
+
+@media (max-width: 1200px) {
+    .hero-title {
+        font-size: 2.3rem;
+    }
+    .counter-value {
+        font-size: 2.8rem;
+    }
+    .hero-car-img {
+        max-height: 230px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .hero-section {
+        padding-top: 95px;
+        padding-bottom: 35px;
+        text-align: center;
+        min-height: auto;
+    }
+    .hero-subtitle {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-title {
+        font-size: 2rem;
+    }
+    .floating-glass-card {
+        display: none;
+    }
+    .search-widget-card {
+        margin-top: 24px;
+        padding: 16px;
+    }
+    .sticky-filter-column,
+    .filter-card,
+    .sticky-filter-sidebar,
+    .sticky-calc-column,
+    .booking-calc-box {
+        position: static !important;
+        top: auto !important;
+        max-height: none !important;
+        overflow-y: visible !important;
+        margin-bottom: 25px;
+    }
+    .booking-stepper {
+        overflow-x: auto;
+        padding-bottom: 10px;
+    }
+    .booking-stepper::before {
+        display: none;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    .section-title {
+        font-size: 1.8rem;
+    }
+    .cta-banner {
+        padding: 40px 20px;
+        text-align: center;
+    }
+    .car-card-image-wrap {
+        height: 150px;
+    }
+    .counter-value {
+        font-size: 2.4rem;
+    }
+    .destination-card {
+        height: 220px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    .hero-section .btn-gradient,
+    .cta-banner .btn-gradient,
+    .hero-section .btn-pill {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .car-specs-grid {
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 0.75rem;
+    }
+    .main-navbar {
+        padding: 12px 0;
+    }
+}
+
+/* Global Table Responsive Safeguards */
+.table-responsive {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    scrollbar-width: thin;
+}
